@@ -299,6 +299,9 @@ const runJob = async () => {
   console.log("job ran!");
   console.log(data.jobs.length, "total jobs quered");
   console.log(filteredJobs.length, "final filtered jobs added");
+  const date = new Date();
+  const current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+  console.log("script ran at", current_time);
 };
 
 await runJob();
